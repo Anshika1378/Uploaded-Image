@@ -23,7 +23,7 @@ export async function callControlNet(face_image_url: string): Promise<ControlNet
 
     // Free SDXL model (no paid credits required)
     const output: any = await replicate.run(
-      "stability-ai/stable-diffusion-3.5-large:latest",
+     "stability-ai/stable-diffusion-3.5-large",
       { input }
     );
 
